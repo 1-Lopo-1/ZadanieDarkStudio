@@ -1,0 +1,37 @@
+// Цвета кнопок
+$mainRedButton: #F34C3F;
+$hoverRedButton: #F45E52;
+$activeRedButton: #F57065;
+
+$mainBlueButton: #28B6FF;
+$hoverBlueButton: #28B6FF;
+$activeBlueButton: #28B6FF;
+
+
+$Gray: #484848; // у большей части всего текста
+$LightGray: #B0B0B0; // для hover у прозрачной кнопки
+$White: #fff; // у большей части кнопок и ещё в некоторых местах типа карты
+$emptyColor: transparent;
+
+// Границы для прозрачной кнопки
+$mainBorderSizeButton: 1px;
+$hoverBorderSizeButton: 2px;
+
+// Шрифты
+$bold: "Nunito SemiBold", serif;
+$regular: "Nunito", serif;
+
+// Размеры шрифта для ПК
+$deskH1FontSize: 48px;
+$deskH2FontSize: 34px;
+$deskH3AndLargeFontSize: 20px; // large-text вроде большой текст по содержанию
+$deskMainText: 16px;
+$deskSmall-text: 14px;
+
+// Размер шрифтов для телефона
+$mobileH1FontSize: 26px;
+$mobileH2FontSize: 22px;
+$mobileH3FontSize: 18px;
+$mobileLargeText: 16px;
+$mobileMainText: 14px;
+$mobileSmall-text: 12px;

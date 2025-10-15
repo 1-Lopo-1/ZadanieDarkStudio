@@ -12,6 +12,11 @@ $Gray: #484848; // у большей части всего текста
 $LightGray: #B0B0B0; // для hover у прозрачной кнопки
 $White: #fff; // у большей части кнопок и ещё в некоторых местах типа карты
 $emptyColor: transparent;
+$gradient: linear-gradient(
+                to right,
+                rgba(0, 0, 0, 0.2),  /* Чёрный цвет с 20% прозрачности */
+                rgba(0, 0, 0, 0.6)   /* Чёрный цвет с 60% прозрачности */
+);
 
 // Границы для прозрачной кнопки
 $mainBorderSizeButton: 1px;
@@ -35,3 +40,11 @@ $mobileH3FontSize: 18px;
 $mobileLargeText: 16px;
 $mobileMainText: 14px;
 $mobileSmall-text: 12px;
+
+// Сброс стилей
+*, *:after, *:before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+

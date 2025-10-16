@@ -8,14 +8,14 @@ $hoverBlueButton: #28B6FF;
 $activeBlueButton: #28B6FF;
 
 
-$Gray: #484848; // у большей части всего текста
-$LightGray: #B0B0B0; // для hover у прозрачной кнопки
-$White: #fff; // у большей части кнопок и ещё в некоторых местах типа карты
+$gray: #484848; // у большей части всего текста
+$lightGray: #B0B0B0; // для hover у прозрачной кнопки
+$white: #fff; // у большей части кнопок и ещё в некоторых местах типа карты
 $emptyColor: transparent;
 $gradient: linear-gradient(
-                to right,
-                rgba(0, 0, 0, 0.2),  /* Чёрный цвет с 20% прозрачности */
-                rgba(0, 0, 0, 0.6)   /* Чёрный цвет с 60% прозрачности */
+                to left,
+                rgba(255, 255, 255, 0.4),
+                rgba(255, 255, 255, 0.9)
 );
 
 // Границы для прозрачной кнопки
@@ -31,7 +31,7 @@ $deskH1FontSize: 48px;
 $deskH2FontSize: 34px;
 $deskH3AndLargeFontSize: 20px; // large-text вроде большой текст по содержанию
 $deskMainText: 16px;
-$deskSmall-text: 14px;
+$deskSmallText: 14px;
 
 // Размер шрифтов для телефона
 $mobileH1FontSize: 26px;
@@ -42,9 +42,128 @@ $mobileMainText: 14px;
 $mobileSmall-text: 12px;
 
 // Сброс стилей
-*, *:after, *:before {
+* {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: $white;
+}
+
+// Работа с тегами на прямую
+h1 {
+  font: {
+    size: $deskH1FontSize;
+    family: $bold;
+    weight: 700;
+  }
+  background: $emptyColor;
+  overflow-wrap: break-word;
+}
+
+h2 {
+  font: {
+    size: $deskH2FontSize;
+    family: $bold;
+    weight: 700;
+  }
+  background: $emptyColor;
+  overflow-wrap: break-word;
+}
+
+h3 {
+  font: {
+    size: $deskH3AndLargeFontSize;
+    family: $bold;
+    weight: 700;
+  }
+  background: $emptyColor;
+  overflow-wrap: break-word;
+}
+
+header {
+  margin-top: 12px;
+}
+
+span, img {
+  font-size: $deskMainText;
   margin: 0;
   padding: 0;
 }
 
+// Работа с текстом
+.large-text {
+  font: {
+    size: $deskH3AndLargeFontSize;
+    family: $regular;
+    weight: 400;
+  }
+  background: $emptyColor;
+  overflow-wrap: break-word;
+}
+
+.main-text {
+  font: {
+    size: $deskMainText;
+    family: $regular;
+    weight: 400;
+  }
+  background: $emptyColor;
+  overflow-wrap: break-word;
+}
+
+.small-text {
+  font: {
+    size: $deskSmallText;
+    family: $regular;
+    weight: 400;
+  }
+  background: $emptyColor;
+  overflow-wrap: break-word;
+}
+
+// Работа с контейнерами
+.main-margit {
+  margin-left: 375px;
+  margin-right: 375px;
+}
+
+.header-img-margin {
+  margin-right: 10%;
+}
+
+.header-anchors {
+  margin-right: 3%;
+}
+
+.header-last-anchors {
+  margin-right: 8%;
+}
+
+.img-logo-messenger {
+  margin-right: 15%;
+}
+
+.header-image-bg {
+  background-image: $gradient, url("../img/backgroundImgHeader.png");
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+}
+
+
+.cont-text-header {
+  width: 40%;
+  margin-bottom: 10%;
+  margin-left: 19%;
+  background: $emptyColor;
+}
+
+// Кнопки
+.red-button {
+  background: $mainRedButton;
+  width: 256px;
+  height: 56px;
+  color: $white;
+  border-width: 0;
+  border-radius: 8px;
+}

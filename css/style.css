@@ -1,7 +1,110 @@
-*, *:after, *:before {
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  background-color: #fff;
+}
+
+h1 {
+  font-size: 48px;
+  font-family: "Nunito SemiBold", serif;
+  font-weight: 700;
+  background: transparent;
+  overflow-wrap: break-word;
+}
+
+h2 {
+  font-size: 34px;
+  font-family: "Nunito SemiBold", serif;
+  font-weight: 700;
+  background: transparent;
+  overflow-wrap: break-word;
+}
+
+h3 {
+  font-size: 20px;
+  font-family: "Nunito SemiBold", serif;
+  font-weight: 700;
+  background: transparent;
+  overflow-wrap: break-word;
+}
+
+header {
+  margin-top: 12px;
+}
+
+span, img {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+.large-text {
+  font-size: 20px;
+  font-family: "Nunito", serif;
+  font-weight: 400;
+  background: transparent;
+  overflow-wrap: break-word;
+}
+
+.main-text {
+  font-size: 16px;
+  font-family: "Nunito", serif;
+  font-weight: 400;
+  background: transparent;
+  overflow-wrap: break-word;
+}
+
+.small-text {
+  font-size: 14px;
+  font-family: "Nunito", serif;
+  font-weight: 400;
+  background: transparent;
+  overflow-wrap: break-word;
+}
+
+.main-margit {
+  margin-left: 375px;
+  margin-right: 375px;
+}
+
+.header-img-margin {
+  margin-right: 10%;
+}
+
+.header-anchors {
+  margin-right: 3%;
+}
+
+.header-last-anchors {
+  margin-right: 8%;
+}
+
+.img-logo-messenger {
+  margin-right: 15%;
+}
+
+.header-image-bg {
+  background-image: linear-gradient(to left, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.9)), url("../img/backgroundImgHeader.png");
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+}
+
+.cont-text-header {
+  width: 40%;
+  margin-bottom: 10%;
+  margin-left: 19%;
+  background: transparent;
+}
+
+.red-button {
+  background: #F34C3F;
+  width: 256px;
+  height: 56px;
+  color: #fff;
+  border-width: 0;
+  border-radius: 8px;
 }
 
 /*# sourceMappingURL=style.css.map */
